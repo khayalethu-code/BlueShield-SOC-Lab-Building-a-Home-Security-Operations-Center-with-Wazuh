@@ -16,16 +16,16 @@ The primary goal of this project was to build a fully functional Security Operat
 
 At the end of this project I was able to:
 
-Build a virtual cybersecurity lab using Oracle VirtualBox.
-Deploy a preconfigured Wazuh SIEM server.
-Install Windows 10 as a monitored endpoint.
-Install Kali Linux as a security testing workstation.
-Install and configure the Wazuh Agent.
-Deploy Microsoft Sysmon for enhanced Windows logging.
-Monitor Windows Event Logs in real time.
-Generate authentication failure events.
-Perform basic threat hunting using Wazuh.
-Investigate security alerts as a Tier 1 SOC Analyst.
+1. Build a virtual cybersecurity lab using Oracle VirtualBox.
+2. Deploy a preconfigured Wazuh SIEM server.
+3. Install Windows 10 as a monitored endpoint.
+4. Install Kali Linux as a security testing workstation.
+5. Install and configure the Wazuh Agent.
+6. Deploy Microsoft Sysmon for enhanced Windows logging.
+7. Monitor Windows Event Logs in real time.
+8. Generate authentication failure events.
+9. Perform basic threat hunting using Wazuh.
+10. Investigate security alerts as a Tier 1 SOC Analyst.
 
 ## 2. Introduction
 
@@ -39,8 +39,9 @@ This project demonstrates how a Security Operations Center can be built using en
 
 Throughout this project, I built the environment from scratch, configured the required components, verified communication between systems and investigated Windows authentication failure events using the Wazuh dashboard.
 
-3. Lab Architecture
-Home Lab Design
+## 3. Lab Architecture
+ 
+ Home Lab Design
 
 <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/aa683be8-43d4-48b0-8899-8f0b99a0085f" />
 
@@ -68,124 +69,186 @@ Home Lab Design
                    Threat Hunting & Alerts
 
 ## 4. Tools Used
+
 Tool	Purpose
 
-Oracle VirtualBox : 	Creates and manages virtual machines
-Windows 10	       :   Simulated employee workstation
-Kali Linux	Security testing workstation
-Wazuh OVA	Security Information and Event Management (SIEM) server
-Wazuh Agent	Collects Windows logs
-Microsoft Sysmon	Generates detailed Windows security events
-Wazuh Dashboard	Visualizes and investigates alerts
-Windows Event Viewer	Verifies generated logs
+1. Oracle VirtualBox : 	Creates and manages virtual machines
+2. Windows 10	       :   Simulated employee workstation
+3. Kali Linux	Security testing workstation
+4. Wazuh OVA	Security Information and Event Management (SIEM) server
+5. Wazuh Agent	Collects Windows logs
+6. Microsoft Sysmon	Generates detailed Windows security events
+7. Wazuh Dashboard	Visualizes and investigates alerts
+9. Windows Event Viewer	Verifies generated logs
 
 
-5. Skills Demonstrated
+## 5. Skills Demonstrated
 
 This project demonstrates practical cybersecurity and system administration skills, including:
 
-Security Operations
-SIEM Administration
-Security Monitoring
-Threat Hunting
-Log Analysis
-Alert Investigation
-Incident Response Fundamentals
-Windows Administration
-Windows Event Logs
-Sysmon Deployment
-Windows Service Management
-Authentication Monitoring
-Linux Administration
-Linux Command Line
-Service Management
-Network Configuration
-Troubleshooting
-Networking
-Virtual Networking
-IP Configuration
-Agent Communication
-Connectivity Testing
-Soft Skills
-Documentation
-Troubleshooting
-Problem Solving
-Technical Communication
-6. Importance to an Organization
+* Security Operations
+* SIEM Administration
+* Security Monitoring
+* Threat Hunting
+* Log Analysis
+* Alert Investigation
+* Incident Response Fundamentals
+* Windows Administration
+* Windows Event Logs
+* Sysmon Deployment
+* Windows Service Management
+* Authentication Monitoring
+* Linux Administration
+* Linux Command Line
+* Service Management
+* Network Configuration
+* Troubleshooting
+* Networking
+* Virtual Networking
+* IP Configuration
+* Agent Communication
+* Connectivity Testing
+  
+## Soft Skills
+
+* Documentation
+* Troubleshooting
+* Problem Solving
+* Technical Communication
+  
+## 6. Importance to an Organization
 
 Organizations generate thousands of security events every day. Without centralized monitoring, malicious activities can remain undetected for extended periods, increasing the risk of data breaches and operational disruptions.
 
 A SIEM platform such as Wazuh enables security teams to:
 
-Collect logs from multiple systems into one central location.
-Detect suspicious activities in real time.
-Monitor user authentication attempts.
-Investigate security incidents efficiently.
-Support compliance requirements.
-Reduce the time required to detect and respond to threats.
+* Collect logs from multiple systems into one central location.
+* Detect suspicious activities in real time.
+* Monitor user authentication attempts.
+* Investigate security incidents efficiently.
+* Support compliance requirements.
+* Reduce the time required to detect and respond to threats.
 
 By implementing endpoint monitoring with Sysmon and centralized log analysis with Wazuh, organizations gain improved visibility into activities occurring across their infrastructure.
 
-7. Step-by-Step Implementation
+## 7. Step-by-Step Implementation
 
-This will be the largest section of the repository.
-
-We'll divide it into chapters.
-
-Step 1 — Download Oracle VirtualBox
-Objective
-
-Install the virtualization software required to host the lab environment.
-
-Why?
+## Step 1 — Download Oracle VirtualBox
 
 VirtualBox allows multiple operating systems to run simultaneously on a single physical computer, making it possible to simulate an enterprise network without additional hardware.
 
-Instructions
-Open your web browser.
-Navigate to the Oracle VirtualBox website.
-Download the Windows version.
-Run the installer.
-Accept the default installation options.
-Finish the installation.
+I had Oracle VirtualBox,  the Windows version downloaded and installed successfully on my computer 
 
-📷 Screenshot 1: VirtualBox download page.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d6e04562-cc10-4c59-8509-cd708eb62cdd" />
 
-📷 Screenshot 2: Successful installation.
 
-Verification
+## Verification
 
 Oracle VirtualBox opens successfully from the Windows Start Menu.
 
-From here, the guide continues with clearly structured chapters such as:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/75d7d1f3-7791-4fb8-bde9-fd776acadca2" />
 
-Step 2 – Download Windows 10 ISO
-Step 3 – Download Kali Linux ISO
-Step 4 – Download Wazuh OVA
-Step 5 – Create the Windows 10 Virtual Machine
-Step 6 – Install Windows 10
-Step 7 – Create the Kali Linux Virtual Machine
-Step 8 – Install Kali Linux
-Step 9 – Import the Wazuh OVA
-Step 10 – Configure VirtualBox Networking
-Step 11 – Configure the Wazuh Server
-Step 12 – Install the Windows Agent
-Step 13 – Install and Verify Sysmon
-Step 14 – Verify Agent Connectivity
-Step 15 – Generate Windows Security Events
-Step 16 – Investigate Authentication Failures
-Step 17 – Threat Hunting in Wazuh
+## Step 2 : ISO images and Wazuh Ova
+
+Downloaded Windows 10 ISO, Wazuh Ova and kali Linux ISO images and saved them on 1 folder
+
+<img width="1920" height="1080" alt="Screenshot 2026-06-04 123903" src="https://github.com/user-attachments/assets/89452759-d12c-4c07-b98c-621df2ba8ad1" />
+
+## step 3: Sysmon Download
+
+Downloded the Sysmon Config file on Chrome
+
+<img width="960" height="540" alt="Sysmonconfig-exportxml" src="https://github.com/user-attachments/assets/616ef546-0e10-4ab5-b573-8d42fdd8b634" />
+
+## Step 4: VM Installion 
+
+Installed the Windows 10 ISO image inside VirtualBox and allocated the appropriate specs sucha RAM, storage, CPU 
+
+<img width="1920" height="1080" alt="Screenshot 2026-06-04 124304" src="https://github.com/user-attachments/assets/d1a871fb-dd0c-41c2-b74b-f2b285d2feec" />
+
+* I did the same thing even on the wazuh and kali linux
+* Configured  Windows 10 settings including password and installed Sysmon inside Windows 10
+
+<img width="1920" height="1080" alt="Screenshot 2026-06-04 144825" src="https://github.com/user-attachments/assets/58b44112-567c-417c-8e76-2fdc82b7171c" />
+  
+## Install and Verify Sysmon
+  
+* To verify if sysmon is installed, I opened Event Viewer > Sysmon > Operation
+    <img width="1920" height="1080" alt="Screenshot 2026-06-04 151250" src="https://github.com/user-attachments/assets/ebb46c4b-0fe9-4e43-a43f-90dded22a439" />
+
+## Started  both Windows 10 VM and Wazuh Server and logged in to view my IP address using the command 'ip addr '
+
+<img width="1920" height="1080" alt="Screenshot 2026-06-04 144825" src="https://github.com/user-attachments/assets/b6d199d4-f1a6-4182-aafa-12c0f035b2e7" />
+<img width="1920" height="1080" alt="Screenshot 2026-06-04 133845" src="https://github.com/user-attachments/assets/4b5aaeba-50c5-40a4-9817-1e1dead35ce5" />
+
+* the IP address is on the inet section, I will use this password to log into Wazuh Dashboard
+
+## Step 5: Wazuh Dashboard Access
+
+Using the password provided form the Wazuh server, I used it to log into the dashboard on https://"ip address" and logged in using the default credentials provided by Wazuh
+
+<img width="1920" height="1080" alt="Screenshot 2026-06-04 135827" src="https://github.com/user-attachments/assets/f554c5bb-c832-4933-984d-6ab22db59807" />
+
+## Step 6: Deploying Windows 10 agent
+
+1. Navigated to Windows 10 settings to view the name of the device named as WIN10-SOC during windows configuration. I will Use this name when deploying the agent 
+   <img width="960" height="540" alt="02-Win10-rename" src="https://github.com/user-attachments/assets/536afe30-d592-4f01-ab2f-ce7cf467be15" />
+2. On Windows VM , opened command prompt and typed ip config to view its ip address
+   <img width="1920" height="1080" alt="Screenshot 2026-06-04 140308" src="https://github.com/user-attachments/assets/38ce18f5-d54d-4503-be49-c20210ba8ee6" />
+3. Using my Windows VM's IP address and name, I deployed the Windows agent in wazuh
+   <img width="1920" height="1080" alt="Screenshot 2026-06-04 145441" src="https://github.com/user-attachments/assets/0e381786-a06b-481c-99d8-431e06f24aa9" />
+   
+* Wazuh gave me two commands to paste on my Windows VM on powershell as an administrator and to start the Wazuh services
+  
+  <img width="1920" height="1080" alt="Screenshot 2026-06-04 150307" src="https://github.com/user-attachments/assets/879a13bd-7e12-43f1-b04f-cf02f118aa7a" />
+  <img width="1920" height="1080" alt="Screenshot 2026-06-04 150510" src="https://github.com/user-attachments/assets/25374816-059e-4a1a-9c35-a0caf8f5eddc" />
+<img width="1920" height="1080" alt="Screenshot 2026-06-04 150625" src="https://github.com/user-attachments/assets/f0efcb95-97cf-4b3a-9fbf-204ba2c2d274" />
+
+## Step 6: Windows Agent Deployed Successfully
+
+Now the Windows agent has been deployed successfully  and its active
+
+<img width="1920" height="1080" alt="Screenshot 2026-06-04 150810" src="https://github.com/user-attachments/assets/fb765f55-f507-493b-9bd3-b7b2ed236645" />
+
+* Wazuh dashboard of number of alerts generated within 24 hours with their risk severity
+
+<img width="1920" height="1080" alt="Screenshot 2026-06-04 151936" src="https://github.com/user-attachments/assets/85ede289-fc51-4c17-9999-bac2bced2776" />
+* Windows 10 agent 429 events in total and there are no authentication failure and success so far
+  
+  <img width="1920" height="1080" alt="Screenshot 2026-06-04 151936" src="https://github.com/user-attachments/assets/27657654-0b3b-4a3b-bc28-f55575c6cc95" />
+
+## Step 7: Generating Windows true and benign alerts and logs
+
+1. Started Windows 10 VM and entered the wrong password more than 1 times to generate the logon failure log and on Wazuh dashboard, I navigated through threat hunting > WIN10-SOC > events
+
+   <img width="1920" height="1080" alt="Screenshot 2026-07-28 154821" src="https://github.com/user-attachments/assets/a2613e72-f5e1-4adb-8cc5-b9292fb41473" />
+* Now the logon failure event has been generated
+
+## Step 8 : Investigate Authentication Failures
+
+* To investigate the authentication failure, in this case my wrong password I attempted to use, I had to click the event to view more information about it like IP address for destination , source, port numbers, message of the alert etc.
+  
+  <img width="1920" height="1080" alt="Screenshot 2026-07-28 154821" src="https://github.com/user-attachments/assets/a337e4b0-32c9-4531-a6b6-bf2cdd1698ea" />
+ <img width="1920" height="1080" alt="Screenshot 2026-07-28 154937" src="https://github.com/user-attachments/assets/1d68dd71-a72b-44d2-8fb9-071a1b054874" />
+
+
+
+
+
+
+
+
+
+
+
+
+
 Step 18 – Troubleshooting and Solutions
 
 Each step will include:
 
-Objective
-Why it matters
-Step-by-step instructions
-Screenshots
-Verification
-Troubleshooting tips (where applicable)
-8. Executive Summary
+
+## 8. Executive Summary
 
 This project demonstrates the design and implementation of a functional Security Operations Center (SOC) home lab using Oracle VirtualBox, Windows 10, Kali Linux, Wazuh SIEM and Microsoft Sysmon.
 
