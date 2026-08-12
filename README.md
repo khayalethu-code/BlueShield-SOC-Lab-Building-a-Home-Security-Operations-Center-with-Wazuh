@@ -79,7 +79,10 @@ Tool	Purpose
 5. Wazuh Agent	Collects Windows logs
 6. Microsoft Sysmon	Generates detailed Windows security events
 7. Wazuh Dashboard	Visualizes and investigates alerts
+8. Windows Event Viewer
 9. Windows Event Viewer	Verifies generated logs
+10. PowerShell
+11. Wazuh Threat Hunting
 
 
 ## 5. Skills Demonstrated
@@ -92,7 +95,6 @@ This project demonstrates practical cybersecurity and system administration skil
 * Threat Hunting
 * Log Analysis
 * Alert Investigation
-* Incident Response Fundamentals
 * Windows Administration
 * Windows Event Logs
 * Sysmon Deployment
@@ -230,23 +232,6 @@ Now the Windows agent has been deployed successfully  and its active
   
   <img width="1920" height="1080" alt="Screenshot 2026-07-28 154821" src="https://github.com/user-attachments/assets/a337e4b0-32c9-4531-a6b6-bf2cdd1698ea" />
  <img width="1920" height="1080" alt="Screenshot 2026-07-28 154937" src="https://github.com/user-attachments/assets/1d68dd71-a72b-44d2-8fb9-071a1b054874" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-Step 18 – Troubleshooting and Solutions
-
-Each step will include:
-
 
 ## 8. Executive Summary
 
